@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./img/blubon.jpg" type="image/x-icon">
+    <title>Trun On Blub</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        h1{
+            font-size: 800;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: oblique;
+            justify-content: center !important;
+            align-items: center !important;
+            background-color: black;
+            color: azure;
+        }
+        .containerflex{
+            align-items: center !important;
+            justify-content: center !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerflex">
+    <h1>Blub Trun On/Off</h1>
+    <img id="bulb" src="./img/bluboff.jpg" alt="bluboff"width="400px"height="500px">
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    <script>
+        function light(show){
+    var  pic;
+      if(show == 0){
+        pic = "img/bluboff.jpg";
+      }
+      else{
+        pic = "img/blubon.jpg";
+      }
+      document.getElementById('bulb').src = pic;
+        }
+    </script>
+
+</body>
+</html>
